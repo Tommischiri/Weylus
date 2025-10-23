@@ -110,7 +110,8 @@ jobs:
     - name: Download deps
       run: |
         npm install -g typescript
-        brew install nasm
+        brew update
+        brew install nasm cmake
         cargo install cargo-bundle
       shell: bash
     - name: Build
